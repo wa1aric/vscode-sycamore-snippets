@@ -1,0 +1,33 @@
+{
+  "name": "vscode-sycamore-snippets",
+  "displayName": "Sycamore Snippets",
+  "description": "Visual Studio Code snippets for Sycamore library",
+  "publisher": "walaric",
+  "icon": "img/logo.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wa1aric/vscode-sycamore-snippets"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "rust",
+    "snippet",
+    "sycamore",
+    "webassembly"
+],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "rust",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}

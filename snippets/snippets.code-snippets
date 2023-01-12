@@ -1,0 +1,37 @@
+{
+    "sycamoreRender": {
+		"prefix": "sr",
+		"body": "sycamore::render(|cx| view! { cx,\n\t$0\n});",
+		"description": "Render Sycamore app to the DOM"
+	},
+	"sycamoreViewMacro": {
+		"prefix": "svm",
+		"body": "view! { cx,\n\t$0\n}",
+		"description": "Create view! macro"
+	},
+	"sycamoreComponent": {
+		"prefix": "sc",
+		"body": "#[component]\nfn ${1:MyComponent}<G: Html>(cx: Scope) -> View<G> {\n\tview! { cx,\n\t\t$0\n\t}\n}",
+		"description": "Component function"
+	},
+	"sycamoreComponentReactiveProps": {
+		"prefix": "scrp",
+		"body": "#[derive(Props)]\nstruct ${1:MyProps}<'a> {\n\t${2:field}: &'a ReadSignal<${3:type}>\n}\n\n#[component]\nfn ${4:MyComponent}<'a, G: Html>(cx: Scope<'a>, props: ${1:MyProps}<'a>) -> View<G> {\n\tview! { cx,\n\t\t$0\n\t}\n}",
+		"description": ""
+	},
+	"sycamoreProps": {
+		"prefix": "sp",
+		"body": "#[derive(Props)]\nstruct ${1:MyProps} {\n\t$0\n}",
+		"description": "Props"
+	},
+	"sycamoreReactiveProps": {
+		"prefix": "srp",
+		"body": "#[derive(Props)]\nstruct ${1:MyProps}<'a> {\n\t${2:field}: &'a ReadSignal<${0:type}>\n}",
+		"description": "Reactive props"
+	},
+	"sycamoreChildrenField": {
+		"prefix": "scf",
+		"body": "${1:children}: Children<'a, G>$0",
+		"description": "Children"
+	}
+}
