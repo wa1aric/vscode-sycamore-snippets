@@ -14,14 +14,19 @@
 		"body": "#[component]\nfn ${1:MyComponent}<G: Html>(cx: Scope) -> View<G> {\n\tview! { cx,\n\t\t$0\n\t}\n}",
 		"description": "Component function"
 	},
+	"sycamoreComponentProps": {
+		"prefix": "scp",
+		"body": "#[derive(Props)]\nstruct ${1:Props} {\n\t$2\n}\n\n#[component]\nfn ${3:MyComponent}<G: Html>(cx: Scope, props: ${1:Props}) -> View<G> {\n\tview! { cx,\n\t\t$0\n\t}\n}",
+		"description": "Component with props"
+	},
 	"sycamoreComponentReactiveProps": {
 		"prefix": "scrp",
 		"body": "#[derive(Props)]\nstruct ${1:MyProps}<'a> {\n\t${2:field}: &'a ReadSignal<${3:type}>\n}\n\n#[component]\nfn ${4:MyComponent}<'a, G: Html>(cx: Scope<'a>, props: ${1:MyProps}<'a>) -> View<G> {\n\tview! { cx,\n\t\t$0\n\t}\n}",
-		"description": ""
+		"description": "Component with reactive props"
 	},
 	"sycamoreProps": {
 		"prefix": "sp",
-		"body": "#[derive(Props)]\nstruct ${1:MyProps} {\n\t$0\n}",
+		"body": "#[derive(Props)]\nstruct ${1:Props} {\n\t$0\n}",
 		"description": "Props"
 	},
 	"sycamoreReactiveProps": {

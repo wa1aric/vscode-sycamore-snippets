@@ -1,33 +1,39 @@
 {
-  "name": "vscode-sycamore-snippets",
-  "displayName": "Sycamore Snippets",
-  "description": "Visual Studio Code snippets for Sycamore library",
-  "publisher": "walaric",
-  "icon": "img/logo.png",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wa1aric/vscode-sycamore-snippets"
-  },
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.74.0"
-  },
-  "categories": [
-    "Snippets"
-  ],
-  "keywords": [
-    "rust",
-    "snippet",
-    "sycamore",
-    "webassembly"
-],
-  "contributes": {
-    "snippets": [
-      {
-        "language": "rust",
-        "path": "./snippets/snippets.code-snippets"
-      }
-    ]
-  }
+	"name": "vscode-sycamore-snippets",
+	"displayName": "Sycamore Snippets",
+	"description": "Visual Studio Code snippets for Sycamore library",
+	"publisher": "walaric",
+	"icon": "img/logo.png",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wa1aric/vscode-sycamore-snippets"
+	},
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"rust",
+		"snippet",
+		"sycamore",
+		"webassembly"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "rust",
+				"path": "./snippets/snippets.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "9291b89f-5a08-47eb-beed-6cd0c59f06ed",
+		"publisherDisplayName": "Valery Stepanov",
+		"publisherId": "162a6d2d-3ebd-4ba0-b12a-0eb42a9ca59c",
+		"isPreReleaseVersion": false
+	}
 }
