@@ -43,5 +43,10 @@
 		"prefix": "skc",
 		"body": "Keyed(\n\titerable=$1,\n\tview=|cx, x| view! {\n\t\t$0\n},\n\tkey=|x| *x,\n)",
 		"description": "Keyed component"
+	},
+	"sycamoreIndexed": {
+		"prefix": "sic",
+		"body": "Indexed(\n\titerable=count,\n\tview=|cx, x| view! { cx,\n\t\t\t$0\n\t\t}\n\t},\n)",
+		"description": "Indexed component is used to render a list of items that is keyed by index."
 	}
 }
