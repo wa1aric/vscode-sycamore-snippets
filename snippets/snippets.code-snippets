@@ -48,5 +48,10 @@
 		"prefix": "sic",
 		"body": "Indexed(\n\titerable=count,\n\tview=|cx, x| view! { cx,\n\t\t\t$0\n\t\t}\n\t},\n)",
 		"description": "Indexed component is used to render a list of items that is keyed by index."
+	},
+	"sycamoreCreateSignal": {
+		"prefix": "scs",
+		"body": "let $1 = create_signal(cx, $0);",
+		"description": "Create a signal"
 	}
 }
